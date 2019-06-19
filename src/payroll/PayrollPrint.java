@@ -17,21 +17,19 @@ public static void main(String[] args)
 {
 /* here assumed that 50 employee accounts can be created
  for the given bank */
-    
-    Payroll ac[]=new Payroll[50];
+    double salary;
+    String name;
+    Payroll ac=new Payroll();
     Scanner sc=new Scanner(System.in);
  
-    for(int i = 0; i < ac.length; i++){
+    for(int i = 0; i < 41; i++){
         System.out.println("Please enter the employee name:");
-        String name = sc.nextLine();
-        double salary;
+        name = sc.nextLine();
         do {
             System.out.println("Please enter the salary: salary <=3000");
             salary = sc.nextDouble();
         } while (salary > 3000);
-    System.out.println("The final Salary including bonus is: " + ac[i].calculation());
-
-       
+    System.out.println("The final Salary including bonus is: " + ac.calculation());
     }
 }
 
