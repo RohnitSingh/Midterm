@@ -19,6 +19,9 @@ public class Payroll
      /**constructor that takes the salary and employee name
       * 
       */
+   public Payroll(){
+       
+   }
    public Payroll(double Sal,String givenUser)
         {
             Salary=Sal;
