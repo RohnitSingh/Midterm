@@ -19,7 +19,6 @@ public static void main(String[] args)
  for the given bank */
     double salary;
     String name;
-    Payroll ac=new Payroll();
     Scanner sc=new Scanner(System.in);
  
     for(int i = 0; i < 41; i++){
@@ -28,7 +27,9 @@ public static void main(String[] args)
         do {
             System.out.println("Please enter the salary: salary <=3000");
             salary = sc.nextDouble();
+            
         } while (salary > 3000);
+        Payroll ac=new Payroll(salary, name);
     System.out.println("The final Salary including bonus is: " + ac.calculation());
     }
 }
