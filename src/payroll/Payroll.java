@@ -27,6 +27,9 @@ public class Payroll
         }
          /**The method for calculating salary including bonus.Bonus is 10% of salary 
       */ 
+   public double calculation(){
+      return (Salary/10) + Salary;
+   }
         
         
      /**The getter for the Salary
